@@ -1,0 +1,176 @@
+/* Base Styles */
+
+* {
+  box-sizing: border-box;
+  font-family: 'Merriweather', serif;
+}
+
+.container {
+  margin: 0 auto;
+	padding: 20px;
+}
+
+.main-header {
+  color: white;
+  background-color: #2F4F4F;
+  font-size: .8em;
+  padding: 17px 0;
+}
+
+fieldset {
+  border: none;
+}
+
+.intro h2 {
+  margin-bottom: 0;
+  font-weight: bold;
+  text-align: center;
+}
+
+.intro p {
+  margin-top: 10px;
+  color: #DCDCDC;
+}
+
+.intro {
+  border-bottom: solid 3px black;
+}
+
+form {
+  border-top: solid 1px black;
+  margin-top: 2px;
+  padding: 20px;
+}
+
+.contact-info {
+  border-bottom: 2px solid black;
+}
+
+legend {
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+textarea,
+select  {
+  border: none;
+  border-radius:  5px;
+  text-align: right;
+  background-color: #DCDCDC;
+  height: auto;
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 30px;
+  margin-top: 10px;
+}
+
+input[placeholder],
+select[placeholder] {
+  font-size: .9em;
+  font-style: italic;
+
+}
+
+.contact {
+  margin-bottom: 30px;
+}
+
+.contact-info {
+  margin-bottom: 30px;
+}
+
+label {
+  font-size: .9em;
+}
+
+p {
+  font-size: 0.95em;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  margin-bottom: 15px;
+}
+
+
+
+/* Layout */
+
+.main-header,
+.container,
+.intro,
+form,
+.main-footer,
+input {
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  margin: 17px auto;
+}
+
+h2 {
+  margin: 5px auto;
+}
+
+.intro p {
+  text-align: center;
+}
+
+.intro {
+  margin: 1px auto;
+  max-width: 370px;
+}
+
+form {
+  margin: 1px auto;
+  max-width: 370px;
+}
+
+label[for="topics"] {
+  margin-top: 10px;
+}
+
+button {
+  padding: 19px 39px 18px 39px;
+  color: #FFF;
+  background-color: #4FB390;
+  font-size: 18px;
+  text-align: center;
+  border-radius: 5px;
+  width: 100%;
+  border: none;
+  box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+  margin-bottom: 10px;
+}
+
+footer {
+  text-align: center;
+  font-size: .8em;
+  font-style: italic;
+}
+
+button:hover{
+  color: #DCDCDC;
+}
+
+
+
+/* Media Queries */
+
+@media (min-width: 480px) {
+    fieldset {
+      width: 100%;
+    }
+
+}
