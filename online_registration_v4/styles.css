@@ -169,8 +169,27 @@ button:hover{
 /* Media Queries */
 
 @media (min-width: 480px) {
-    fieldset {
-      width: 100%;
-    }
+
+
+  label {
+    display: inline;
+    width: 30%;
+  }
+
+  input[type="text"],
+  input[type="password"],
+  input[type="date"],
+  input[type="datetime"],
+  input[type="email"],
+  input[type="number"],
+  input[type="search"],
+  input[type="tel"],
+  input[type="time"],
+  input[type="url"],
+  textarea,
+  select   {
+    display: inline;
+    width: 70%;
+  }
 
 }
