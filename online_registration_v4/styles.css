@@ -40,6 +40,11 @@ form {
   border-top: solid 1px black;
   margin-top: 2px;
   padding: 20px;
+  background-color: #F8F8F8;
+}
+
+.container {
+  background-color: #F8F8F8;
 }
 
 .contact-info {
@@ -48,6 +53,10 @@ form {
 
 legend {
   font-weight: bold;
+}
+
+input:focus {
+  transition: 2s;
 }
 
 input[type="text"],
@@ -73,10 +82,14 @@ select  {
   margin-top: 10px;
 }
 
+select {
+  font-size: .9em;
+  color: grey;
+}
+
 input[placeholder],
 select[placeholder] {
   font-size: .9em;
-  font-style: italic;
 
 }
 
@@ -105,7 +118,7 @@ input[type="radio"] {
 
 /* Layout */
 
-.main-header,
+/* .main-header,
 .container,
 .intro,
 form,
@@ -113,10 +126,11 @@ form,
 input {
   display: flex;
   flex-direction: column;
-}
+} */
 
 h1 {
   margin: 17px auto;
+  text-align: center;
 }
 
 h2 {
@@ -139,6 +153,7 @@ form {
 
 label[for="topics"] {
   margin-top: 10px;
+  min-width: 90%;
 }
 
 button {
@@ -164,16 +179,41 @@ button:hover{
   color: #DCDCDC;
 }
 
+input:focus,
+textarea:focus {
+  background: #4FB390;
+  text-align: left;
+}
+
 
 
 /* Media Queries */
 
 @media (min-width: 480px) {
 
+  .intro,
+  form    {
+    width: 50%;
+    max-width: 800px;
+
+  }
+
+  form,
+  .contact-info,
+  .newsletter {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
 
   label {
-    display: inline;
-    width: 30%;
+    display: inline-block;
+    width: 28%;
+    padding-right: 10px;
+  }
+
+  textarea{
+    width: 100%;
   }
 
   input[type="text"],
@@ -186,10 +226,14 @@ button:hover{
   input[type="tel"],
   input[type="time"],
   input[type="url"],
-  textarea,
   select   {
-    display: inline;
+    display: inline-block;
     width: 70%;
   }
 
+  .clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+ }
 }

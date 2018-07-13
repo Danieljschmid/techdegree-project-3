@@ -26,25 +26,35 @@
           <fieldset class="contact-info">
             <legend class="contact">Contact Information</legend>
 
-            <label for="name">Full Name</label>
-            <input type="text" placeholder="required" id="name" name="user_name">
+            <div class="clearfix">
+              <label class="clearfix" for="name">Full Name</label>
+              <input required type="text" placeholder="required" id="name" name="user_name">
+            </div>
 
+            <div class="clearfix">
+              <label for="email">Email Address</label>
+              <input required type="email" placeholder="required" id="email" name="user_email">
+            </div>
 
-            <label for="email">Email Address</label>
-            <input type="email" placeholder="required" id="email" name="user_email">
+            <div>
+              <label for="number">Phone Number</label>
+              <input type="number" id="number" name="user_number">
+            </div>
 
-            <label for="number">Phone Number</label>
-            <input type="number" id="number" name="user_number">
+            <div>
+              <label for="address">Street Address</label>
+              <input type="text" id="address" name="user_address">
+            </div>
 
-            <label for="address">Street Address</label>
-            <input type="text" id="address" name="user_address">
-
-            <label for="city">City</label>
-            <input type="text" id="city" name="user_city">
+            <div>
+              <label for="city">City</label>
+              <input type="text" id="city" name="user_city">
+            </div>
 
           <div>
-            <label for="county">County</label>
-            <select id="county-select" placeholder="select county" name="user_county">
+            <label for="county-select">County</label>
+            <select required id="county-select" name="user_county">
+              <option value="placeholder" id="select-placeholder"> Select County </option>
               <option value="devon"> Devon </option>
               <option value="somerset"> Somerset </option>
               <option value="cornwall"> Cornwall </option>
